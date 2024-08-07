@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		8AF1785B2C6423460024749A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1785A2C6423460024749A /* AppDelegate.swift */; };
 		8AF1785D2C6423460024749A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1785C2C6423460024749A /* SceneDelegate.swift */; };
-		8AF1785F2C6423460024749A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1785E2C6423460024749A /* ViewController.swift */; };
+		8AF1785F2C6423460024749A /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1785E2C6423460024749A /* ReminderListViewController.swift */; };
 		8AF178622C6423460024749A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8AF178612C6423460024749A /* Base */; };
 		8AF178642C6423480024749A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF178632C6423480024749A /* Assets.xcassets */; };
 		8AF178672C6423480024749A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8AF178662C6423480024749A /* Base */; };
 		8AF178722C6423480024749A /* TodayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF178712C6423480024749A /* TodayTests.swift */; };
 		8AF1787C2C6423480024749A /* TodayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1787B2C6423480024749A /* TodayUITests.swift */; };
 		8AF1787E2C6423480024749A /* TodayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1787D2C6423480024749A /* TodayUITestsLaunchTests.swift */; };
+		8AF1788F2C642D850024749A /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1788E2C642D840024749A /* Reminder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		8AF178572C6423460024749A /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF1785A2C6423460024749A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF1785C2C6423460024749A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8AF1785E2C6423460024749A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8AF1785E2C6423460024749A /* ReminderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListViewController.swift; sourceTree = "<group>"; };
 		8AF178612C6423460024749A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AF178632C6423480024749A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AF178662C6423480024749A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		8AF178772C6423480024749A /* TodayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF1787B2C6423480024749A /* TodayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayUITests.swift; sourceTree = "<group>"; };
 		8AF1787D2C6423480024749A /* TodayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AF1788E2C642D840024749A /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,10 @@
 		8AF178592C6423460024749A /* Today */ = {
 			isa = PBXGroup;
 			children = (
+				8AF1788D2C642D7C0024749A /* Models */,
 				8AF1785A2C6423460024749A /* AppDelegate.swift */,
 				8AF1785C2C6423460024749A /* SceneDelegate.swift */,
-				8AF1785E2C6423460024749A /* ViewController.swift */,
+				8AF1785E2C6423460024749A /* ReminderListViewController.swift */,
 				8AF178602C6423460024749A /* Main.storyboard */,
 				8AF178632C6423480024749A /* Assets.xcassets */,
 				8AF178652C6423480024749A /* LaunchScreen.storyboard */,
@@ -127,6 +130,14 @@
 			path = TodayUITests;
 			sourceTree = "<group>";
 		};
+		8AF1788D2C642D7C0024749A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1788E2C642D840024749A /* Reminder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +154,8 @@
 			dependencies = (
 			);
 			name = Today;
+			packageProductDependencies = (
+			);
 			productName = Today;
 			productReference = 8AF178572C6423460024749A /* Today.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +228,8 @@
 				Base,
 			);
 			mainGroup = 8AF1784E2C6423460024749A;
+			packageReferences = (
+			);
 			productRefGroup = 8AF178582C6423460024749A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AF1785F2C6423460024749A /* ViewController.swift in Sources */,
+				8AF1785F2C6423460024749A /* ReminderListViewController.swift in Sources */,
 				8AF1785B2C6423460024749A /* AppDelegate.swift in Sources */,
 				8AF1785D2C6423460024749A /* SceneDelegate.swift in Sources */,
+				8AF1788F2C642D850024749A /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +461,7 @@
 				DEVELOPMENT_TEAM = 9B334YL85T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Today/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Today;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -473,6 +490,7 @@
 				DEVELOPMENT_TEAM = 9B334YL85T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Today/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Today;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

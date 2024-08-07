@@ -11,10 +11,13 @@ on:
 
 jobs:
   build:
-
+    name: Swift ${{ macos-latest }}
     runs-on: macos-latest
 
     steps:
+    - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
+    - name: Get Swift version
+      run: swift --version
     - uses: actions/checkout@v4
     - name: Build
       run: swift build -v
